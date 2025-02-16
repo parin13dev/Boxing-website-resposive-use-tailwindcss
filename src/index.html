@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boxing</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <h1 class="text-1xl">Boxing Coming</h1>
+    <header class="text-white">
+        <!-- top bar -->
+        <section class="bg-black border-b-white border-b-2 items-center justify-center">
+            <section class="container mx-auto flex flex-row justify-between bg-black  py-2 px-4 md:py-2 md:px-0 items-center">
+                <!-- Top left -->
+                <div class="pt-0">
+                    <span class="text-sm md:text-base">OPEN HOURS 08:00 - 22:00</span>
+                </div>
+                <!-- Top right -->
+                <div class="flex flex-row gap-6 text-lg md:text-2xl items-center justify-center">
+                    <a class="text-red-600 hover:cursor-pointer justify-center flex"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a class="hover:text-red-600 hover:cursor-pointer justify-center flex"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a class="hover:text-red-600 hover:cursor-pointer justify-center flex"><i
+                            class='bx bxl-instagram'></i></a>
+
+                </div>
+            </section>
+        </section>
+        <!-- hero section -->
+         <!-- * h-screen bg-center bg-cover จัดแต่งภาพ -->
+        <section
+            class="flex flex-col relative bg-[url(https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/Hero1.jpg)] h-[700px]  md:h-screen bg-center bg-cover">
+            <!-- navbar -->
+            <nav class="md:container m-5 md:mx-auto flex flex-row items-center justify-between mt-3">
+                <div><img
+                        src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/05/logo-ipsum-putih.gif"
+                        alt="logo" class="h-16 md:h-20">
+                </div>
+                <!-- icon menu resonsive   -->
+                <div class="md:hidden block">
+                    <a href="#" class="text-3xl hover:text-red-600 font-bold"><i class='bx bx-menu'></i></a>
+                 </div>
+                <!-- menu  -->
+                <div class="hidden md:block">
+                    <ul class="flex flex-row gap-7 text-lg font-normal uppercase">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Program</li>
+                        <li>Page</li>
+                        <li>Article&News</li>
+                    </ul>
+                </div>
+                <!-- button -->
+                <div class="hidden md:block">
+                    <button class="bg-red-600 px-10 py-3 uppercase ">Join us now</button>
+                </div>
+                 
+            </nav>
+            <!-- info -->
+            <!-- ? ถ้าไม่อยากกำหนด pr-100 ทำไงได้บ้าง -->
+            <div class="container mx-auto h-full flex-col flex justify-center gap-6 px-5 pb-50  md:pr-100 md:px-0">
+                <div class="text-lg text-red-600 uppercase">
+                    Round Arena
+                </div>
+                <div class="uppercase text-3xl md:text-6xl font-bold md:leading-18">
+                    THE BEST BOXING SCHOOL AND MARTIAL ARTS IN THE WORLD
+                </div>
+                <div class="font-thin text-sm md:text-lg md:w-3/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                    luctus nec ullamcorper
+                    mattis, pulvinar dapibus leo.
+                </div>
+                <div class="flex flex-row items-center gap-5 pt-5">
+                    <button class="bg-red-600 px-8 py-3 md:px-10 md:py-3 uppercase text-xs md:text-lg">Learn more</button>
+                    <span class="bg-white md:w-14 md:h-14 w-12 h-12 flex items-center justify-center rounded-full">
+                        <a href="#" class="md:text-3xl text-2xl text-red-600 flex items-center justify-center pl-1"><i
+                                class='bx bxs-right-arrow'></i></a>
+                    </span>
+                </div>
+            </div>
+            <!-- box experience -->
+            <div
+                class=" absolute bottom-0 right-2 md:right-47 flex flex-col gap-5 bg-red-600 md:p-10 p-5 items-center justify-center font-bold md:pb-15">
+                <div class="uppercase items-center justify-center flex flex-col gap-2">
+                    <p class="md:text-6xl text-3xl">18+</p>
+                    <p>experience</p>
+                </div>
+                <div class="uppercase items-center justify-center flex flex-col gap-2">
+                    <p class="md:text-6xl text-3xl">100+</p>
+                    <p>students</p>
+                </div>
+            </div>
+        </section>
+    </header>
 </body>
+
 </html>
