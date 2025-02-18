@@ -13,16 +13,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
 </head>
 
-<body class="leading-normal tracking-normal">
+<body class="leading-normal tracking-normal w-screen">
   <header class="text-white">
     <!-- top bar -->
     <section class="bg-black border-b-white border-b-2 items-center justify-center">
       <section class="container mx-auto flex flex-row justify-between bg-black py-2 px-4 md:py-2 md:px-0 items-center">
         <!-- Top left -->
         <div class="pt-0">
-          <span class="text-sm md:text-lg">OPEN HOURS 08:00 - 22:00</span>
+          <span class="text-xl ">OPEN HOURS 08:00 - 22:00</span>
         </div>
         <!-- Top right -->
         <div class="flex flex-row gap-6 text-xl md:text-2xl items-center justify-center">
@@ -35,7 +37,7 @@
     <!-- hero section -->
     <!-- * h-screen bg-center bg-cover จัดแต่งภาพ -->
     <section
-      class="flex flex-col relative bg-[url(https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/Hero1.jpg)] h-[700px] md:h-screen bg-center bg-cover">
+      class="flex flex-col relative bg-[url(https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/Hero1.jpg)] h-[760px] md:h-screen bg-center bg-cover">
       <!-- navbar -->
       <nav
         class="md:container md:mx-auto flex flex-col md:flex-row md:items-center items-start justify-between mt-3 relative">
@@ -43,7 +45,7 @@
           <div>
             <img
               src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/05/logo-ipsum-putih.gif"
-              alt="logo" class="h-24 md:h-20 px-5" />
+              alt="logo" class="h-18 md:h-20 px-5" />
           </div>
           <!-- icon menu resonsive   -->
           <div class="md:hidden block pr-5" data-collapse-toggle="navbar-toggle">
@@ -52,12 +54,12 @@
         </div>
         <!-- menu  mobile-->
         <div
-          class="hidden flex flex-row items-center justify-between gap-10 md:gap-80 box-border absolute bgopacity-25 bg-slate-950 w-screen md:w-auto top-15 px-10 py-5 md:px-0 md:py-0"
+          class="hidden flex flex-row items-center justify-between gap-10 md:gap-80 box-border absolute bgopacity-25 bg-slate-950 w-screen md:w-auto top-16 px-10 py-5 md:px-0 md:py-0"
           id="navbar-toggle">
           <!--? hidden flex ใช้ได้แต่ทับกันอยู่  -->
           <div class="w-full">
             <ul
-              class="flex flex-col md:flex-row  md:gap-7 gap-3 text-base font-normal uppercase justify-center box-border items-start">
+              class="flex flex-col md:flex-row  md:gap-7 gap-3  text-2xl uppercase justify-center box-border items-start">
               <li class="">Home</li>
               <li class="">About</li>
               <li class="">Program</li>
@@ -67,7 +69,7 @@
           </div>
           <!-- button -->
           <div class="">
-            <button class="bg-red-600 px-7 py-3 uppercase whitespace-nowrap">
+            <button class="bg-red-600 px-7 py-3 mr-16 text-2xl uppercase whitespace-nowrap">
               Join us now
             </button>
           </div>
@@ -96,17 +98,27 @@
       </nav>
       <!-- info -->
       <!-- ? ถ้าไม่อยากกำหนด pr-100 ทำไงได้บ้าง -->
-      <div class="container mx-auto h-full flex-col flex justify-center gap-6 px-5 pb-50 md:pr-100 md:px-0">
+      <div
+        class="container mx-auto h-full flex-col flex justify-center gap-2 md:gap-6 px-5 pb-50 md:pr-100 md:px-0 md:pt-0">
         <div class="text-3xl text-red-600 uppercase">Round Arena</div>
-        <div class="uppercase text-7xl md:text-[300px] font-bold md:leading-18">
-          THE BEST BOXING SCHOOL AND <br>MARTIAL ARTS IN THE WORLD
+        <!-- mobile -->
+        <div class="md:hidden block uppercase text-4xl w-4/5  font-bold md:leading-18">
+          THE BEST BOXING SCHOOL AND MARTIAL ARTS IN THE WORLD
         </div>
-        <div class="font-thin text-2xl md:text-3xl md:w-3/5">
+        <div class="md:hidden block font-thin text-xl w-4/5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </div>
+        <!-- desktop -->
+        <div class="md:block hidden uppercase text-7xl w-3/5 font-bold md:leading-18">
+          THE BEST BOXING SCHOOL AND MARTIAL ARTS IN THE WORLD
+        </div>
+        <div class="md:block hidden font-thin text-2xl   w-3/5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </div>
         <div class="flex flex-row items-center gap-5 pt-5">
-          <button class="bg-red-600 px-8 py-3 md:px-10 md:py-3 uppercase text-2xl md:text-2xl">
+          <button class="bg-red-600 px-8 py-3 md:px-10 md:py-3 uppercase text-xl md:text-2xl">
             Learn more
           </button>
           <span class="bg-white md:w-14 md:h-14 w-12 h-12 flex items-center justify-center rounded-full">
@@ -116,15 +128,28 @@
         </div>
       </div>
       <!-- box experience -->
+      <!-- mobile -->
       <div
-        class="absolute bottom-0 right-2 md:right-47 flex flex-col gap-5 bg-red-600 md:p-10 md:pb-20 py-10 px-30 items-center justify-center font-bold">
-        <div class="uppercase items-center justify-center flex flex-col gap-2">
-          <p class="md:text-6xl text-5xl">18+</p>
-          <p class="text-xl">experience</p>
+        class="md:hidden  absolute bottom-0 right-2 md:right-47 flex flex-col gap-3 bg-red-600  md:px-10  py-5 px-10 items-center justify-center font-bold">
+        <div class="uppercase items-center justify-center flex flex-col">
+          <p class="md:text-6xl text-3xl">18+</p>
+          <p class="md:text-xl text-base">experience</p>
         </div>
-        <div class="uppercase items-center justify-center flex flex-col gap-2">
-          <p class="md:text-6xl text-5xl">100+</p>
-          <p class="text-xl">students</p>
+        <div class="uppercase items-center justify-center flex flex-col md:*:pb-10">
+          <p class="md:text-6xl text-3xl">100+</p>
+          <p class="md:text-xl text-base">students</p>
+        </div>
+      </div>
+      <!-- desktop -->
+      <div
+        class="md:flex hidden  absolute bottom-0 right-2 md:right-47  flex-col gap-3 bg-red-600  pb-18 pt-10 px-13 items-center justify-center font-bold">
+        <div class="uppercase items-center justify-center flex flex-col">
+          <p class="md:text-6xl text-3xl">18+</p>
+          <p class="md:text-xl text-base">experience</p>
+        </div>
+        <div class="uppercase items-center justify-center flex flex-col :pb-10">
+          <p class="text-6xl ">100+</p>
+          <p class="text-xl ">students</p>
         </div>
       </div>
     </section>
@@ -146,8 +171,9 @@
       <div>
         <div class="flex flex-col gap-3">
           <h3 class="uppercase text-3xl text-red-600">About us</h3>
-          <p class="uppercase text-7xl">BEST BOXING SCHOOL AND <br>MARTIAL ARTS SINCE 2006</p>
-          <p class="text-2xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis nibh, pharetra sit amet faucibus
+          <p class="uppercase md:text-5xl">BEST BOXING SCHOOL AND <br>MARTIAL ARTS SINCE 2006</p>
+          <p class="text-2xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis
+            nibh, pharetra sit amet faucibus
             quis, volutpat vitae augue. Phasellus dictum diam quis placerat faucibus. Nunc rhoncus, tellus vel pretium
             porta, massa augue ultricies felis, et faucibus nibh urna et sem.</p>
         </div>
@@ -155,31 +181,45 @@
           <div class="w-1/3 bg-gray-200 px-10  gap-4">
             <div class="pt-7 pb-3 bg-red-600 text-white inline-flex px-3 text-4xl"><i class='bx bx-star'></i></div>
             <p class="pt-5 text-2xl text-red-600">BEST COACHING</p>
-            <p class="py-3 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus. ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="py-3 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus. ipsum
+              dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="w-1/3 bg-gray-200 px-10 gap-4">
             <div class="pt-7 pb-3 bg-red-600 text-white inline-flex px-3 text-4xl"><i class='bx bx-star'></i></div>
             <p class="pt-5 text-2xl text-red-600">BEST COACHING</p>
-            <p class="py-3 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus. ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="py-3 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus. ipsum
+              dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="w-1/3 bg-gray-200 px-10 gap-4">
             <div class="pt-7 pb-3 bg-red-600 text-white inline-flex px-3 text-4xl"><i class='bx bx-star'></i></div>
             <p class="pt-5 text-2xl text-red-600">BEST COACHING</p>
-            <p class="py-3 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus. ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="py-3 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus. ipsum
+              dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
     </div>
     <!-- sponcer -->
-     <div class="container mx-auto flex flex-row gap-3 pt-40 pb-20 opacity-70"> 
-       <div class="w-1/6"><img src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum1.gif" alt=""></div>
-       <div class="w-1/6"><img src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum2.gif" alt=""></div>
-       <div class="w-1/6"><img src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum4.gif" alt=""></div>
-       <div class="w-1/6"><img src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum6.gif" alt=""></div>
-       <div class="w-1/6"><img src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum3.gif" alt=""></div>
-       <div class="w-1/6"><img src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum5.gif" alt=""></div>
-
-     </div>
+    <div class="container mx-auto flex flex-row gap-3 pt-40 pb-20 opacity-70">
+      <div class="w-1/6"><img
+          src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum1.gif" alt="">
+      </div>
+      <div class="w-1/6"><img
+          src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum2.gif" alt="">
+      </div>
+      <div class="w-1/6"><img
+          src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum4.gif" alt="">
+      </div>
+      <div class="w-1/6"><img
+          src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum6.gif" alt="">
+      </div>
+      <div class="w-1/6"><img
+          src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum3.gif" alt="">
+      </div>
+      <div class="w-1/6"><img
+          src="https://riski.creedcreatives.net/roundarena/wp-content/uploads/sites/21/2024/04/logoipsum5.gif" alt="">
+      </div>
+    </div>
   </section>
 
   <!-- scrip -->
